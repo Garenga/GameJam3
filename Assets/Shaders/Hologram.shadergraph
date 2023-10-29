@@ -373,8 +373,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 46.000064849853519,
-            "y": -363.0000305175781
+            "x": 45.99999237060547,
+            "y": -341.9999694824219
         },
         "m_Blocks": [
             {
@@ -1086,7 +1086,7 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.Rendering.HighDefinition.ShaderGraph.SystemData",
     "m_ObjectId": "3c94be9ba8f849248ee75f7062b601cf",
-    "m_MaterialNeedsUpdateHash": 529,
+    "m_MaterialNeedsUpdateHash": 0,
     "m_SurfaceType": 0,
     "m_RenderingPass": 1,
     "m_BlendMode": 0,
@@ -1111,7 +1111,7 @@
     "m_TessellationBackFaceCullEpsilon": -0.25,
     "m_TessellationMaxDisplacement": 0.009999999776482582,
     "m_Version": 1,
-    "inspectorFoldoutMask": 0
+    "inspectorFoldoutMask": 1
 }
 
 {
@@ -2021,8 +2021,8 @@
     "m_ObjectId": "9b25f46a6cee4efba39f15b07e13621d",
     "m_NormalDropOffSpace": 0,
     "m_BlendPreserveSpecular": true,
-    "m_ReceiveDecals": true,
-    "m_ReceiveSSR": true,
+    "m_ReceiveDecals": false,
+    "m_ReceiveSSR": false,
     "m_ReceiveSSRTransparent": false,
     "m_SpecularAA": false,
     "m_SpecularOcclusionMode": 1,
