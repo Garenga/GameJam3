@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PickUpObjects : MonoBehaviour
@@ -8,19 +6,19 @@ public class PickUpObjects : MonoBehaviour
     [SerializeField] Material outlineGlow;
     [SerializeField] Shader outlineGlowShader;
     public bool isPickedUp;
-    Material oldMaterial;
+    Material[] matarials;
 
     private void Start()
     {
         pickupRenderer = GetComponent<Renderer>();
-
+        matarials = pickupRenderer.materials;
     }
 
     private void Update()
     {
         if (isPickedUp)
         {
-            Material[] matarials = pickupRenderer.materials;
+           // Material[] matarials = pickupRenderer.materials;
 
             matarials[1] = outlineGlow;
             matarials[1].shader = outlineGlowShader;
@@ -29,9 +27,10 @@ public class PickUpObjects : MonoBehaviour
         }
         else
         {
-            Material[] matarials = pickupRenderer.materials;
 
-            matarials[1] =matarials[0];
+            //Material[] matarials = pickupRenderer.materials;
+
+            matarials[1] = matarials[0];
             matarials[1].shader = matarials[0].shader;
 
             pickupRenderer.materials = matarials;

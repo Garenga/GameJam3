@@ -26,9 +26,10 @@ public class CinemachinePOVExtension : CinemachineExtension
     public float rawRotation;
     public float currentRotationZ;
 
-    private void OnEnable()
+    protected override void OnEnable()
     {
         Events.OnGravityReverse += GravityReverseEvent;
+        base.OnEnable();
     }
 
     private void OnDisable()
@@ -36,7 +37,7 @@ public class CinemachinePOVExtension : CinemachineExtension
         Events.OnGravityReverse += GravityReverseEvent;
     }
 
-    protected override void Awake()
+    public void Start()
     {
         inpuManager = InputManager.Instance;
         if (startingRotation == null) { startingRotation = transform.localRotation.eulerAngles; }

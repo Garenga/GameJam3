@@ -34,6 +34,7 @@ public class Pickup : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
+            if (heldAbiliy == null) return;
             heldAbiliy.GetComponent<Ability>().ActivateAbility(true);
         }
         if (Input.GetMouseButtonUp(1))
@@ -47,7 +48,8 @@ public class Pickup : MonoBehaviour
             //Debug.Log("PressedLeftButton");
             RaycastHit hit;
 
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupRange))
+            if (Physics.Raycast(transform.position, transform.forward, out hit, pickupRange))
+               // if(Physics.SphereCast(transform.position,pickupRange,out hit,))
             {
                 PickupObject(hit.transform.gameObject);
                
@@ -64,7 +66,6 @@ public class Pickup : MonoBehaviour
             MoveObject();
         }
 
-        Debug.Log(heldAbiliy.gameObject.name);
     }
 
     void PickupObject(GameObject pickObject)
@@ -101,6 +102,7 @@ public class Pickup : MonoBehaviour
     }
     void DropObject()
     {
+        if (heldObjectRigidbody == null) return;
 
         heldObjectRigidbody.useGravity = true;
         heldObjectRigidbody.drag = 1;
