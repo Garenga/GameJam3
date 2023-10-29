@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/_Scripts/New Material.mat.meta
 guid: 7f1c3a56ee205e646bc1345b9e4afac1
+========
+guid: cf9285864aa66a7419abdb145cc005b9
+>>>>>>>> Stashed changes:Assets/_Scripts/Materials/v793-ning-28 (2).mat.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000

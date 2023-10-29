@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/Level2.meta
 guid: 55180a95e9809d7499db6237d28fea82
 folderAsset: yes
 DefaultImporter:
+========
+guid: 7f1c3a56ee205e646bc1345b9e4afac1
+NativeFormatImporter:
+>>>>>>>> Stashed changes:Assets/_Scripts/New Material.mat.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

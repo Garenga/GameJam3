@@ -48,7 +48,8 @@ public class Pickup : MonoBehaviour
             //Debug.Log("PressedLeftButton");
             RaycastHit hit;
 
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupRange))
+            if (Physics.Raycast(transform.position, transform.forward, out hit, pickupRange))
+               // if(Physics.SphereCast(transform.position,pickupRange,out hit,))
             {
                 PickupObject(hit.transform.gameObject);
                

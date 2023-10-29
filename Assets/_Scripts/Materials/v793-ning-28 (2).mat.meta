@@ -1,8 +1,13 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/_Scripts/Materials/v793-ning-28 (2).mat.meta
 guid: cf9285864aa66a7419abdb145cc005b9
 NativeFormatImporter:
+========
+guid: 55180a95e9809d7499db6237d28fea82
+folderAsset: yes
+DefaultImporter:
+>>>>>>>> Stashed changes:Assets/Level2.meta
   externalObjects: {}
-  mainObjectFileID: 2100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
