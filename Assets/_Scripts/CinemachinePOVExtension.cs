@@ -78,12 +78,12 @@ public class CinemachinePOVExtension : CinemachineExtension
                     timer += Time.deltaTime;
                      currentRotationZ= Mathf.Lerp(reverseGravityF, normalGravityF, timer);
                   
-                    state.RawOrientation = Quaternion.Euler(startingRotation.y, startingRotation.x, currentRotationZ);
+                    state.RawOrientation = Quaternion.Euler(-startingRotation.y, startingRotation.x, currentRotationZ);
                     rawRotation = currentRotationZ;
                 }
                 else 
                 {
-                    state.RawOrientation = Quaternion.Euler(startingRotation.y, startingRotation.x, currentRotationZ);
+                    state.RawOrientation = Quaternion.Euler(-startingRotation.y, startingRotation.x, currentRotationZ);
                 }
 
             }
